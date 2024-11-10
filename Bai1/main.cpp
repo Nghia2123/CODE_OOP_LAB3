@@ -15,7 +15,10 @@ int main() {
 			cout << "Mau so phai khac 0. Nhap lai: ";
 			continue;
 		}
-		B = PhanSo(tu, mau);
+		else {
+			B = PhanSo(tu, mau);
+			break;
+		}
 	} while (true);
 	cout << "Nhap so nguyen n: ";
 	cin >> n;
