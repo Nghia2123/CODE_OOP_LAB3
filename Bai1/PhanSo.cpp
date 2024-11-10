@@ -120,7 +120,7 @@ istream& operator >> (istream& in, PhanSo& a) {
 			break;
 		}
 	} while (true);
-
+	a.rutGon();
 	return in;
 }
 
