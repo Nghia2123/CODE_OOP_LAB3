@@ -3,14 +3,20 @@
 using namespace std;
 
 int main() {
-	PhanSo A;
+	PhanSo A, B;
 	int n; double d;
 	cout << "Nhap phan so A (tu mau): ";
 	cin >> A;
 	cout << "Nhap phan so B (tu mau): ";
 	int tu, mau;
-	cin >> tu >> mau;
-	PhanSo B(tu, mau);
+	do {
+		cin >> tu >> mau;
+		if (mau == 0) {
+			cout << "Mau so phai khac 0. Nhap lai: ";
+			continue;
+		}
+		B = PhanSo(tu, mau);
+	} while (true);
 	cout << "Nhap so nguyen n: ";
 	cin >> n;
 	cout << "Nhap so thuc d: ";
