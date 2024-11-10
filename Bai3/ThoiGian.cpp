@@ -63,7 +63,7 @@ ThoiGian ThoiGian::operator -(ThoiGian a) {
 // Toan tu ++ (tang 1 giay)
 ThoiGian ThoiGian::operator ++() {\
 	*this = *this + 1;
-	return *this+1;
+	return *this;
 }
 
 // Toan tu -- (giam 1 giay)
