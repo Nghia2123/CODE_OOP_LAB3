@@ -31,13 +31,13 @@ int main() {
 	cout << "A < B: " << ((A < B) ? "Dung" : "Sai") << endl;
 	cout << endl;
 	
-	cout << "Cac phep tinh toan cua A voi so nguyen n1:\n";
+	cout << "Cac phep tinh toan cua A voi so nguyen n:\n";
 	cout << "A + n = " << A + n << endl;
 	cout << "A - n = " << A - n << endl;
 	cout << "A * n = " << A * n << endl;
 	cout << "A / n = " << A / n << endl;
 
-	cout << "Cac phep tinh toan cua A voi so thuc n2:\n";
+	cout << "Cac phep tinh toan cua A voi so thuc d:\n";
 	cout << "A + d = " << A + d << endl;
 	cout << "A - d = " << A - d << endl;
 	cout << "A * d = " << A * d << endl;
