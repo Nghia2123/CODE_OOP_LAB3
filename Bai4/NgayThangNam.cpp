@@ -137,12 +137,14 @@ bool NgayThangNam::operator <=(NgayThangNam a) {
 
 // So sanh lon hon 2 ngay
 bool NgayThangNam::operator >(NgayThangNam a) {
-	return iNam > a.iNam || (iNam == a.iNam && (iThang > a.iThang || (iThang == a.iThang && iNgay > a.iNgay)));
+	return iNam > a.iNam || (iNam == a.iNam && (iThang > a.iThang 
+			|| (iThang == a.iThang && iNgay > a.iNgay)));
 }
 
 // So sanh nho hon 2 ngay
 bool NgayThangNam::operator <(NgayThangNam a) {
-	return iNam < a.iNam || (iNam == a.iNam && (iThang < a.iThang || (iThang == a.iThang && iNgay < a.iNgay)));
+	return iNam < a.iNam || (iNam == a.iNam && (iThang < a.iThang 
+			|| (iThang == a.iThang && iNgay < a.iNgay)));
 }
 
 // Nhap ngay thang nam
