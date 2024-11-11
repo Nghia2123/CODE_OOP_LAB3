@@ -97,8 +97,10 @@ long long NgayThangNam::operator -(NgayThangNam a) {
 	long long n1 = a.TinhNgay();
 	long long n2 = TinhNgay();
 
-	n1 += 365LL * a.iNam + a.iNam / 4 - a.iNam / 100 + a.iNam / 400;
-	n2 += 365LL * iNam + iNam / 4 - iNam / 100 + iNam / 400;
+	for (int nam = 1; nam < a.iNam; nam++)
+		n1 += KiemTraNamNhuan(nam) ? 366 : 365;
+	for (int nam = 1; nam < iNam; nam++)
+		n2 += KiemTraNamNhuan(nam) ? 366 : 365;
 
 	return abs(n2-n1);
 }
